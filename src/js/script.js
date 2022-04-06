@@ -3,8 +3,8 @@ const btn = document.querySelector('.btn');
 let timerId,
     i = 0;
 
-function boxAnimation() {
-    const elem = document.querySelector('.box');
+function circleAnimation() {
+    const elem = document.querySelector('.circle');
     let pos = 0;
     
     const id = setInterval(frame, 10);
@@ -16,4 +16,4 @@ function boxAnimation() {
             elem.style.top = pos + 'px';
             elem.style.left = pos + 'px';
         }}
-} btn.addEventListener('click', boxAnimation);
+} btn.addEventListener('click', circleAnimation);
